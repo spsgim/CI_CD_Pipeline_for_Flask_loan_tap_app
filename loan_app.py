@@ -6,11 +6,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "<p> Hello, World! </p>"
+    return "<p> Hi! Lovely meeting you!</p>"
 
 @app.route("/ping")
 def pinger():
-    return "<p> Hello, I am under water! </p>"
+    return "<p> Hello, Thanks for the ping! </p>"
 
 @app.route("/json")
 def json_check():
