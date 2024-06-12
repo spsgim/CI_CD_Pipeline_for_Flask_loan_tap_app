@@ -17,7 +17,7 @@ def json_check():
     return {'message': 'Hi I am json!'}
 
 # Load the model once when the application starts
-with open('/Users/shailendrasingh/Desktop/Git_Desktop/MLOps/flask_demo/classifier.pkl', 'rb') as model_pickle:
+with open('./classifier.pkl', 'rb') as model_pickle:
     clf = pickle.load(model_pickle)
 
 @app.route("/predict", methods=['POST'])
